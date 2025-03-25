@@ -318,7 +318,7 @@
     <section id="contact-section" class="contact-section">
         <h2>Get in Touch</h2>
         <div class="form-container">
-            <form action="https://formspree.io/f/your-form-endpoint" method="POST">
+           <form action="https://formspree.io/f/mkgjzrky" method="POST">
                 <!-- Name Field -->
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -336,6 +336,27 @@
             </form>
         </div>
     </section>
+    <script>
+    const form = document.querySelector('form');
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const formData = new FormData(form);
+        const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+        if (response.ok) {
+            alert('Message sent successfully!');
+            form.reset();
+        } else {
+            alert('Oops! Something went wrong. Please try again.');
+        }
+    });
+</script>
+
 
     <footer class="footer">
         <div class="footer-container">
