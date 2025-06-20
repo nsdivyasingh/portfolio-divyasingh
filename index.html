@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divya Singh | Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="css/portfolio.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <!-- Inline Critical CSS -->
@@ -36,17 +36,6 @@
         <script src="main.js" defer></script>
 
 </head>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GNQQCXV9M5"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GNQQCXV9M5');
-</script>
-    
 <body>
 
     <!-- Navbar -->
@@ -74,16 +63,16 @@
     </div>
 
     <!-- Dark Mode/Theme Toggle -->
-    <div class="theme-toggle">
+    <!-- <div class="theme-toggle">
         <i class="fas fa-moon"></i>
-    </div>
+    </div> -->
 </nav>
 
     <!--Head section-->
     <section class="hero">
         <div class="container">          
             <h1 class="intro-text text-animate" id="animate-text">Hi! I'm NS Divya Singh</h1>
-            <h5>" Bringing Smart Solutions to Life, Bit by Bit "</h5>
+            <h5>"Bringing Smart Solutions to Life, Bit by Bit"</h5>
             <!-- Enhanced introduction with stronger highlights and smoother text -->
             <p class="subtitle">
                 A <span class="highlight-text">20-year-old student</span> currently pursuing graduation in <span class="highlight-text">Artificial Intelligence and Machine Learning.</span>  
@@ -97,17 +86,7 @@
     </section>
 
     <section class="skills">
-        <div class="btn-container">
-            <button class="btn skill-btn">
-                <i class="fas fa-code"></i> Frontend Dev
-            </button>
-            <button class="btn skill-btn purple">
-                <i class="fas fa-robot"></i> Generative AI
-            </button>
-            <button class="btn skill-btn orange">
-                <i class="fas fa-palette"></i> UI/UX Design
-            </button>
-        </div>
+        
     
         <div class="btn-container">
             <button class="btn contact-btn">
@@ -131,7 +110,7 @@
             <!-- Left Side: Avatar + Social Links -->
             <div class="about-left">
                 <div class="avatar">
-                    <img src="image2.webp" alt="NS Divya Singh">
+                    <img src="images/image2.webp" alt="NS Divya Singh">
                 </div>
                 <!-- Social Links -->
                 <div class="social-icons">
@@ -162,6 +141,13 @@
                 <div class="experience">
                     <div class="exp-item">
                         <h4>
+                            🎯 Internshala ISP Program
+                            <span class="duration">March 2025 </span>
+                        </h4>
+                        <p>Promoted Internshala’s services through strategic outreach and workshops, successfully onboarding new users and boosting platform engagement.</p>
+                    </div>
+                    <div class="exp-item">
+                        <h4>
                             🚀 VisionAstraa Startup Academy
                             <span class="duration">Aug 2024 - Present</span>
                         </h4>
@@ -173,14 +159,8 @@
                             📚 AMC Math Club
                             <span class="duration">July 2024 - Present</span>
                         </h4>
-                        <p>Delivered an engaging and insightful session on the mathematical constant Pi (π), exploring its fascinating history, from ancient civilizations to its modern-day applications. Highlighted Pi’s critical role in fields. Engaged with an enthusiastic audience, fostering discussions on how Pi continues to drive innovation and problem-solving.</p>
-                    </div>
-                    <div class="exp-item">
-                        <h4>
-                            🎯 Internshala ISP Program
-                            <span class="duration">March 2025 </span>
-                        </h4>
-                        <p>Promoted Internshala’s services through strategic outreach and workshops, successfully onboarding new users and boosting platform engagement.</p>
+                        <p>Delivered an engaging and insightful session on the mathematical constant Pi (π), exploring its fascinating history, from ancient civilizations to its modern-day applications. Highlighted Pi’s critical role in fields. Engaged with an enthusiastic audience, fostering discussions on how Pi continues to drive innovation and problem-solving.
+                        </p>
                     </div>
                 </div>
 
@@ -275,14 +255,14 @@
                         <i class="fas fa-mobile-alt"></i> <!-- Mobile icon -->
                     </div>
                     <a href="https://github.com/nsdivyasingh/resqme" target="_blank" class="project-title">
-                        ResQMe
+                        Fake News Detector
                     </a>
                 </div>
-                <p>An Android app that sends real-time location coordinates (latitude and longitude) to emergency contacts during critical situations.</p>
+                <p>A Python app using Google Gemini API to classify news articles as real or fake, with explanations and text/image extraction and speech recognition features.</p>
                 <div class="tech-stack">
-                    <span>Java</span>
-                    <span>Leaflet.js</span>
-                    <span>FireBase</span>
+                    <span>Python</span>
+                    <span>OCR/Vosk</span>
+                    <span>Gemini 1.5</span>
                 </div>
             </div>
     
@@ -312,14 +292,15 @@
                         <i class="fas fa-newspaper"></i> <!-- Newspaper icon for news -->
                     </div>
                     <a href="https://github.com/nsdivyasingh/fake-news-detection" target="_blank" class="project-title">
-                        Fake News Detector
+                        Maze Solver
                     </a>
                 </div>
-                <p>A Python app using Google Gemini API to classify news articles as real or fake, with explanations and text/image extraction and speech recognition features.</p>
+                <p>Built a goal-based AI agent in Python with Pygame to solve partially observable mazes using A*, using dynamic planning and real-time pathfinding visualization.
+</p>
                 <div class="tech-stack">
                     <span>Python</span>
-                    <span>OCR/Vosk</span>
-                    <span>Gemini 1.5</span>
+                    <span>A* Search</span>
+                    <span>Goal-Based</span>
                 </div>
             </div>
         </div>
@@ -329,7 +310,7 @@
     <section id="contact-section" class="contact-section">
         <h2>Get in Touch</h2>
         <div class="form-container">
-           <form action="https://formspree.io/f/mkgjzrky" method="POST">
+            <form action="https://formspree.io/f/mkgjzrky" method="POST">
                 <!-- Name Field -->
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name" required>
@@ -347,27 +328,6 @@
             </form>
         </div>
     </section>
-    <script>
-    const form = document.querySelector('form');
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
-        const formData = new FormData(form);
-        const response = await fetch(form.action, {
-            method: form.method,
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        });
-        if (response.ok) {
-            alert('Message sent successfully!');
-            form.reset();
-        } else {
-            alert('Oops! Something went wrong. Please try again.');
-        }
-    });
-</script>
-
 
     <footer class="footer">
         <div class="footer-container">
@@ -398,7 +358,7 @@
     
     
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 
 </body>
 </html>
