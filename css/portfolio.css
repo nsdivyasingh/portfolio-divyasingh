@@ -8,7 +8,6 @@
 body, html {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 html {
@@ -43,6 +42,12 @@ body {
     z-index: 1000;
     width: 100%;
     max-width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: #fff; /* solid background to avoid transparency over content */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease-in-out;
 }
 
 /* Logo and Name */
@@ -766,6 +771,16 @@ h4 {
 }
 
 @media (max-width: 768px) {
+    .publication {
+        gap: 10px;
+    }
+    .publication-icon {
+        font-size: 22px;
+    }
+}
+
+
+@media (max-width: 768px) {
     .research-section h2 {
         font-size: 28px;
     }
@@ -819,23 +834,17 @@ h4 {
 
 /* External Link Styling */
 .external-link {
-  color: #000;
-  text-decoration: underline;
+  color: #202020;
   font-weight: 500;
   position: relative;
   display: inline-flex;
   align-items: center;
+  font-weight: bold;
 }
 
-.external-link::after {
-  content: '↗';
-  font-size: 0.8em;
-  margin-left: 4px;
-  transition: transform 0.2s ease;
-}
-
-.external-link:hover::after {
-  transform: translate(2px, -2px);
+.external-link:hover {
+  color: #7b93ae;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -1082,9 +1091,6 @@ p {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* ========================= */
-/* Project Header: Icon + Title */
-/* ========================= */
 .project-header {
     display: flex;
     align-items: center;
