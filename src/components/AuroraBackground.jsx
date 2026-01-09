@@ -81,7 +81,7 @@ const AuroraBackground = () => {
             { speed: 0.010, waveSpeed: 0.004, amplitude: 100, yOffset: canvas.height * 0.35, opacity: auroraOpacity * 0.3, width: 400 },
           ]
 
-      time += 0.006 // Slower time increment for smoother, more continuous motion
+      time += 0.06 // Slower time increment for smoother, more continuous motion
 
       layers.forEach((layer, layerIndex) => {
         // Horizontal movement (right to left) - seamless loop
