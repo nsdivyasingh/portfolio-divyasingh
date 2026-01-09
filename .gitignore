@@ -1,3 +1,7 @@
-node_modules/@vercel/speed-insights/vitest.config.mts
-node_modules/@vercel/speed-insights/tsup.config.js
-/node_modules
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.env.local
+.vite
